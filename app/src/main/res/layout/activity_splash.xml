@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  启动页布局：
+  - 根 FrameLayout：品牌色渐变背景 + fitsSystemWindows 预留状态栏/导航栏与刘海安全区
+  - 中央容器（280dp）：波纹 View 与 Logo 同心叠放，波纹圆心即 Logo 圆心
+  - 署名：底部居中，13sp、60% 不透明度，淡入动画在 SplashActivity 中驱动
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- 波纹扩散主动画（自定义 View，ValueAnimator 驱动，60fps） -->
+        <com.qin.paperreader.ui.splash.SplashRippleView
+            android:id="@+id/splash_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Logo：淡入 + 0.82→1.0 缩放，随后 1.0↔1.05 呼吸循环 -->
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/splash_logo_desc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/splash_logo" />
+    </FrameLayout>
+
+    <!-- 署名（需求固定）：底部居中 / 13sp / 60% 透明度 / 极轻微淡入 -->
+    <TextView
+        android:id="@+id/splash_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="44dp"
+        android:alpha="0"
+        android:letterSpacing="0.08"
+        android:text="@string/splash_signature"
+        android:textColor="@color/splash_signature"
+        android:textSize="13sp" />
+</FrameLayout>

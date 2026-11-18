@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全应用强制深色：深色主题父级 + 深色启动背景 + 亮色状态栏图标 -->
+    <style name="Theme.PaperReader" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/window_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <!-- 启动页：继承全局深色主题；窗口背景用渐变图，冷启动不闪白 -->
+    <style name="Theme.PaperReader.Splash">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式下的启动页配色（与应用整体深色一致） -->
+    <color name="splash_bg_top">#1D1914</color>
+    <color name="splash_bg_bottom">#0D0B09</color>
+    <color name="splash_ripple">#B08D6A</color>
+    <color name="splash_logo">#C8A87C</color>
+    <color name="splash_signature">#99B08D6A</color>
+</resources>

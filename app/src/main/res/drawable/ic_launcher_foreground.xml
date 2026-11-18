@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.55"
+        android:scaleY="0.55"
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- 左页 -->
+        <path
+            android:fillColor="#FDF8EF"
+            android:pathData="M22,34 C31,28.5 40,28.5 47,32.5 L47,76 C40,72 31,72 22,77 Z" />
+        <!-- 右页 -->
+        <path
+            android:fillColor="#FDF8EF"
+            android:pathData="M86,34 C77,28.5 68,28.5 61,32.5 L61,76 C68,72 77,72 86,77 Z" />
+        <!-- 书脊 -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FDF8EF"
+            android:strokeWidth="3"
+            android:pathData="M54,31 L54,78" />
+        <!-- 页面文字示意线 -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#D8C6A8"
+            android:strokeWidth="2"
+            android:pathData="M28,42 C33,40 38,40 42,42 M28,50 C33,48 38,48 42,50 M28,58 C33,56 38,56 42,58" />
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#D8C6A8"
+            android:strokeWidth="2"
+            android:pathData="M66,42 C71,40 76,40 80,42 M66,50 C71,48 76,48 80,50 M66,58 C71,56 76,56 80,58" />
+    </group>
+</vector>

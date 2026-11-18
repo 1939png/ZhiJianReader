@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      启动页配色（DayNight 结构：浅色变体注释保留，应用当前整体强制深色，故深浅两套同值）。
+      若日后恢复「随系统深浅模式」，把本文件换成浅色色值即可，values-night 保持深色。
+    -->
+    <!-- 浅色预留：bg_top #FBF6EC / bg_bottom #EDE2CF / ripple #8C6E4A / logo #8C6E4A / signature #996B5433 -->
+    <color name="splash_bg_top">#1D1914</color>
+    <color name="splash_bg_bottom">#0D0B09</color>
+    <color name="splash_ripple">#B08D6A</color>
+    <color name="splash_logo">#C8A87C</color>
+    <!-- 署名：品牌色 + 60% 不透明度（99） -->
+    <color name="splash_signature">#99B08D6A</color>
+</resources>
